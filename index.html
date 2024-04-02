@@ -28,6 +28,10 @@
         console.log("Logging as an object"); 
         companies = JSON.parse(companies);
         console.log(companies);
+        console.log("Logging all company names");
+        for (const company in companies) {
+            console.log(companies[company].name);
+        }
     </script>
 </body>
 </html>
